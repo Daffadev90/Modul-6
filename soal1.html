@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>NIM_Soal1</title>
+    <link type="text/css" rel="stylesheet" href="style1.css" />
+  </head>
+  <body onload="">
+    <form>
+      <div class="form-group">
+        <label>Nama</label>
+        <input type="text" class="form-control" id="nama" readonly />
+      </div>
+      <div class="form-group">
+        <label>NIM</label>
+        <input type="text" class="form-control" id="nim" readonly />
+      </div>
+    </form>
+
+    <script type="text/javascript">
+      // Menampilkan prompt pertama untuk meminta Nama
+      var nama = prompt('Masukkan nama kamu:');
+
+      // Menampilkan prompt kedua untuk meminta NIM
+      var nim = prompt('Masukkan nim kamu:');
+
+      // Memasukkan hasil inputan ke dalam form HTML
+      // Jika user menekan Cancel (hasilnya null), maka akan diisi string kosong
+      document.getElementById('nama').value = nama != null ? nama : '';
+      document.getElementById('nim').value = nim != null ? nim : '';
+    </script>
+  </body>
+</html>

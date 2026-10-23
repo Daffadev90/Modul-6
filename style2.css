@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f8f9fa;
+  margin-top: 50px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+/* Warna khusus untuk tombol */
+#btn-ungu {
+  background-color: #8e44ad;
+}
+#btn-biru {
+  background-color: #2980b9;
+}
+#btn-hijau {
+  background-color: #27ae60;
+}
+
+#btn-sembunyi,
+#btn-tampil {
+  background-color: #f0e6d2; /* Warna krem seperti di gambar */
+  color: #333;
+}
+
+/* Styling Kotak Warna */
+#kotak-warna {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db; /* Warna default (biru) */
+  border: 3px solid #333;
+  border-radius: 10px;
+  margin: 20px auto; /* Biar ke tengah */
+  display: block;
+}

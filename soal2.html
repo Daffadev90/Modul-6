@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <title>1030924000084_Soal2</title>
+    <!-- Ganti pakai NIM kamu -->
+    <link type="text/css" rel="stylesheet" href="style2.css" />
+
+    <!-- Jangan lupa panggil jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <h2>Bermain dengan Warna</h2>
+
+    <!-- Kumpulan Tombol Warna -->
+    <div class="tombol-warna">
+      <button id="btn-ungu">Ungu</button>
+      <button id="btn-biru">Biru</button>
+      <button id="btn-hijau">Hijau</button>
+    </div>
+
+    <!-- Kotak yang bakal berubah warna -->
+    <div id="kotak-warna"></div>
+
+    <!-- Tombol Hide/Show -->
+    <div class="tombol-aksi">
+      <button id="btn-sembunyi">Sembunyikan Kotak</button>
+      <button id="btn-tampil">Tampilkan Kotak</button>
+    </div>
+
+    <!-- Script jQuery -->
+    <script>
+      $(document).ready(function () {
+        // 1. Tombol Ungu
+        $('#btn-ungu').click(function () {
+          $('#kotak-warna').css('background-color', '#9b59b6'); // Warna ungu
+        });
+
+        // 2. Tombol Biru
+        $('#btn-biru').click(function () {
+          $('#kotak-warna').css('background-color', '#3498db'); // Warna biru
+        });
+
+        // 3. Tombol Hijau
+        $('#btn-hijau').click(function () {
+          $('#kotak-warna').css('background-color', '#2ecc71'); // Warna hijau
+        });
+
+        // 4. Tombol Sembunyikan
+        $('#btn-sembunyi').click(function () {
+          $('#kotak-warna').hide(); // Bisa diganti .slideUp() atau .fadeOut()
+        });
+
+        // 5. Tombol Tampilkan
+        $('#btn-tampil').click(function () {
+          $('#kotak-warna').show(); // Bisa diganti .slideDown() atau .fadeIn()
+        });
+      });
+    </script>
+  </body>
+</html>
